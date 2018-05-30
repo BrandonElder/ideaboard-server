@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://brandonelder.github.io/react-ideaboard-client/'
+    origins '*'
 
     resource '*',
       headers: :any,
